@@ -59,6 +59,7 @@ We can do simple EDA while the web scraping is still spinning and understand our
 Always remember to create a MongoDB first to store your data in Part 1.
 
 ```
+client = MongoClient('localhost', 27017)
 db = client['book']
 book_info = db['book_info']
 ```
