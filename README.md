@@ -36,7 +36,7 @@ As a result, you will need to install [Docker](https://docs.docker.com/get-docke
 ```$ docker start mongoserver```
 
 
-### Work Flow
+### Technical Workflow
 ![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG)
 
 ### Part1: Web Scraping
