@@ -18,6 +18,11 @@ The dataset is obtained from [Goodreads](https://www.goodreads.com/) under the [
 11. ISBN
 12. Link
 
+#### Search Bar Page
+![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZLW67WVOZKIUROZYGTAKL7LY)
+#### Book Info from Sublink
+![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZJP7ITXRKDLVVN6GYTAKL7N6)
+
 ### Install & Quickstart
 We will be using [MongoDB](https://www.mongodb.com/) to store our data during the Web Scraping process. That allows us to do Exploratory Data Analysis simultaneously without the Web Scraping process is complete. 
 
@@ -29,6 +34,8 @@ As a result, you will need to install [Docker](https://docs.docker.com/get-docke
 2. Starting Mongo
 
 ```$ docker start mongoserver```
+
+![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZMOH46XYC55LSOAP3LAKL5OM)
 
 ### Part1: Web Scraping
 We will have two seperate juypter notebook, one for web scraping purpose call ```Goodreads Web Scraping Notebook.ipynb```, and another is for EDA purpose call```Goodreads  Exploratory Data Analysis & Statistical Tests.ipynb```.
@@ -42,6 +49,7 @@ We can do simple EDA while the web scraping is still spinning and understand our
 * Number of Book Editions (No significant difference)
 * **Rating Count** (sigificant difference acorrding to the test!)
 
-1. A book with more pages **DOES tend** to be rated more often!
-2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions
+![Findings](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Findings.PNG?token=AMMQHZIRCDMFRVAT6CM7RJLAKL5XU)
+1. A book with more pages **DOES tend** to be rated more often according to the Statistical T-Tests.
+2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
