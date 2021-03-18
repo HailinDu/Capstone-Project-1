@@ -19,9 +19,9 @@ The dataset is obtained from [Goodreads](https://www.goodreads.com/) under the [
 12. Link
 
 #### Search Bar Page
-![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZLW67WVOZKIUROZYGTAKL7LY)
+![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZKQ366DH5ZDOMGMITLAKMBAA)
 #### Book Info from Sublink
-![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZJP7ITXRKDLVVN6GYTAKL7N6)
+![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZPGB3H7LFUKKLIJLTLAKMA7A)
 
 ### Install & Quickstart
 We will be using [MongoDB](https://www.mongodb.com/) to store our data during the Web Scraping process. That allows us to do Exploratory Data Analysis simultaneously without the Web Scraping process is complete. 
@@ -49,7 +49,7 @@ We can do simple EDA while the web scraping is still spinning and understand our
 * Number of Book Editions (No significant difference)
 * **Rating Count** (sigificant difference acorrding to the test!)
 
-![Findings](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Findings.PNG?token=AMMQHZLHE5AEMSXIS4UH3DDAKL7X6)
+![Findings](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Findings.PNG?token=AMMQHZMC7GR5BV7KOSHJ3TDAKMBBI)
 1. A book with more pages **DOES tend** to be rated more often according to the Statistical T-Tests.
 2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
