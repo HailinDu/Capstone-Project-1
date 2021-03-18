@@ -35,7 +35,9 @@ As a result, you will need to install [Docker](https://docs.docker.com/get-docke
 
 ```$ docker start mongoserver```
 
-![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZIDAF6YPKFHG4HYRC3AKL7V4)
+
+### Work Flow
+![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZNHDQS7AQZJOW5OVLTAKMBDK)
 
 ### Part1: Web Scraping
 We will have two seperate juypter notebook, one for web scraping purpose call ```Goodreads Web Scraping Notebook.ipynb```, and another is for EDA purpose call```Goodreads  Exploratory Data Analysis & Statistical Tests.ipynb```.
