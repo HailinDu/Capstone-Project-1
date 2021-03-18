@@ -70,7 +70,7 @@ book_info = db['book_info']
 * Number of Book Editions (No significant difference)
 * **Rating Count** (sigificant difference acorrding to the test!)
 
-![Results](https://github.com/HailinDu/Goodreads-Web-Scraping/blob/main/Images/WorkFlow.PNG)
+![Results](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/T-Test_Results.PNG)
 1. A book with more pages **DOES tend** to be rated more often according to the Statistical T-Tests.
 2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
