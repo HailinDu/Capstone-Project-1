@@ -19,9 +19,9 @@ The dataset is obtained from [Goodreads](https://www.goodreads.com/) under the [
 12. Link
 
 #### Search Bar Page
-![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZOMCIEMTPYNS26ZZQ3AKMCNS)
+![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZMDPNGW6UQZ7LYLRSDAKMDFS)
 #### Book Info from Sublink
-![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZKCA3WVG7YUQIULHH3AKMCPW)
+![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZKDXBRBDVORSCGYRLTAKMDGQ)
 
 ### Install & Quickstart
 We will be using [MongoDB](https://www.mongodb.com/) to store our data during the Web Scraping process. That allows us to do Exploratory Data Analysis simultaneously without the Web Scraping process is complete. 
@@ -37,7 +37,7 @@ As a result, you will need to install [Docker](https://docs.docker.com/get-docke
 
 
 ### Work Flow
-![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZNZMGIIF33755QGPOLAKMCOY)
+![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZNJZCCOKGUBAM2EKWDAKMDHK)
 
 ### Part1: Web Scraping
 We will have two seperate juypter notebook, one for web scraping purpose call ```Goodreads Web Scraping Notebook.ipynb```, and another is for EDA purpose call```Goodreads  Exploratory Data Analysis & Statistical Tests.ipynb```.
@@ -70,9 +70,9 @@ book_info = db['book_info']
 * Number of Book Editions (No significant difference)
 * **Rating Count** (sigificant difference acorrding to the test!)
 
-![Results](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/T-Test_Results.PNG?token=AMMQHZLD4TUP4O23FABR6ULAKMCRA)
+![Results](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/T-Test_Results.PNG?token=AMMQHZOYMSZEKXPNPGMCA7LAKMDJG)
 1. A book with more pages **DOES tend** to be rated more often according to the Statistical T-Tests.
 2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
 ## Tableau (Data Visualization)
-![Dashboard](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Tableau_Dashboard.png?token=AMMQHZKNTMH5EN4FZN5VQA3AKMC6O)
+![Dashboard](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Tableau_Dashboard.png?token=AMMQHZPMQDDXTZBMJNGWPUDAKMDKK)
