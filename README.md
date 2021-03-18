@@ -1,4 +1,4 @@
-### Goodreads Web Scraping & Data Analysis
+### Goodreads Web Scraping 
 
 The purpose of this project to build a web scraping script to obtain 200 pages of books related to Computer Science, and do statistical tests to see does factors, the number of pages, rating counts, review counts, and editions leads to a higher average rating.
 
@@ -17,3 +17,24 @@ The dataset is obtained from goodreads.com under the search page. We will be usi
 10. Editions 
 11. ISBN
 12. Link
+
+### Install & Quickstart
+We will be using MongoDB to store our data during the Web Scraping process. That allows us to do Exploratory Data Analysis simultaneously without the Web Scraping process is complete. 
+
+As a result, you will need to install Docker, Docker Compose, and register a Docker Hub account. Then, we will pull the MongoDB image using Docker. Inside your terminal, you should already able to run Docker "Hello World", then you should run the following command to pull MongoDB:
+1. Using Mongo:
+
+```$ docker run --name mongoserver -p 27017:27017 -v "$PWD":/Your-Working-Directory -d mongo```
+
+2. Starting Mongo
+
+```$ docker start mongoserver```
+
+### Part1: Web Scraping
+We will have two seperate juypter notebook, one for web scraping purpose, and another is for EDA purpose.
+
+### Part2: Exploratory Data Analysis & Statistical Test
+We can do simple EDA while the web scraping is still spinning and understand our dataset in advance. After all data (books) are being collected and stored in our MongoDB, then we can do statistical tests to answer our question. 
+
+### Findings
+
