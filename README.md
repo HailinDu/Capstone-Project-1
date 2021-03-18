@@ -1,9 +1,9 @@
+![Goodreads](https://s2982.pcdn.co/wp-content/uploads/2020/10/goodreads-logo-700x373.jpg.optimal.jpg)
 ### Goodreads Web Scraping 
-
 The purpose of this project to build a web scraping script to obtain 200 pages of books related to Computer Science, and do statistical tests to see does factors, the number of pages leads to a higher average rating.
 
 ### Dataset
-The dataset is obtained from goodreads.com under the search page. We will be using the search bar to search books for Computer Science. The search pages only extended to 200 pages, which contains 2000 books of information. Each book has a personalized web link that allows users to click in to check for book information. Each book will have a title, and may or may not have the following information as well:
+The dataset is obtained from [Goodreads](https://www.goodreads.com/) under the [search bar page](https://www.goodreads.com/search?page=1&q=Computer+Science&qid=iHFbTUVsHL&search_type=books&tab=books&utf8=%E2%9C%93). We will be using the search bar to search books for Computer Science. The search pages only extended to 200 pages, which contains 2000 books of information. Each book has a personalized web link that allows users to click in to check for book information. Each book will have a title, and may or may not have the following information as well:
 
 1. Book title ***(Must Have)***
 2. Author  
