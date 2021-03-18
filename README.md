@@ -1,6 +1,6 @@
 ### Goodreads Web Scraping 
 
-The purpose of this project to build a web scraping script to obtain 200 pages of books related to Computer Science, and do statistical tests to see does factors, the number of pages, rating counts, review counts, and editions leads to a higher average rating.
+The purpose of this project to build a web scraping script to obtain 200 pages of books related to Computer Science, and do statistical tests to see does factors, the number of pages leads to a higher average rating.
 
 ### Dataset
 The dataset is obtained from goodreads.com under the search page. We will be using the search bar to search books for Computer Science. The search pages only extended to 200 pages, which contains 2000 books of information. Each book has a personalized web link that allows users to click in to check for book information. Each book will have a title, and may or may not have the following information as well:
@@ -37,4 +37,11 @@ We will have two seperate juypter notebook, one for web scraping purpose, and an
 We can do simple EDA while the web scraping is still spinning and understand our dataset in advance. After all data (books) are being collected and stored in our MongoDB, then we can do statistical tests to answer our question. 
 
 ### Findings
+* Average Rating (No signifcant difference between Books with longer number of pages of short number of number of pages)
+* Review Count (No significant difference)
+* Number of Book Editions (No significant difference)
+* **Rating Count** (sigificant difference acorrding to the test!)
+
+1. A book with more pages **DOES tend** to be rated more often!
+2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions
 
