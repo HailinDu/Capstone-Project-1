@@ -51,7 +51,7 @@ We can do simple EDA while the web scraping is still spinning and understand our
 * Number of Book Editions (No significant difference)
 * **Rating Count** (sigificant difference acorrding to the test!)
 
-![Findings](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Findings.PNG?token=AMMQHZMC7GR5BV7KOSHJ3TDAKMBBI)
+![Results](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/T-Test_Results.PNG?token=AMMQHZIWD3BWOB272VPTWBLAKMBOU)
 1. A book with more pages **DOES tend** to be rated more often according to the Statistical T-Tests.
 2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
