@@ -19,9 +19,9 @@ The dataset is obtained from [Goodreads](https://www.goodreads.com/) under the [
 12. Link
 
 #### Search Bar Page
-![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZKQ366DH5ZDOMGMITLAKMBAA)
+![searchbar](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Search_Bar.PNG?token=AMMQHZOMCIEMTPYNS26ZZQ3AKMCNS)
 #### Book Info from Sublink
-![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZPGB3H7LFUKKLIJLTLAKMA7A)
+![sublink](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Book_Sublink_Info.PNG?token=AMMQHZKCA3WVG7YUQIULHH3AKMCPW)
 
 ### Install & Quickstart
 We will be using [MongoDB](https://www.mongodb.com/) to store our data during the Web Scraping process. That allows us to do Exploratory Data Analysis simultaneously without the Web Scraping process is complete. 
@@ -37,13 +37,31 @@ As a result, you will need to install [Docker](https://docs.docker.com/get-docke
 
 
 ### Work Flow
-![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZNHDQS7AQZJOW5OVLTAKMBDK)
+![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG?token=AMMQHZNZMGIIF33755QGPOLAKMCOY)
 
 ### Part1: Web Scraping
 We will have two seperate juypter notebook, one for web scraping purpose call ```Goodreads Web Scraping Notebook.ipynb```, and another is for EDA purpose call```Goodreads  Exploratory Data Analysis & Statistical Tests.ipynb```.
 
+You will need to:
+* search a genre you interested in
+* click on the second page to obtain the url link
+* replace the link of the search bar page in the jupyter notebook
+
+For example:
+1. Page 1/Default Search Bar Page: https://www.goodreads.com/search?utf8=%E2%9C%93&q=Computer+Science&search_type=books
+2. Page 2: https://www.goodreads.com/search?page=2&q=Computer+Science&qid=A44Zff48B9&search_type=books&tab=books&utf8=%E2%9C%93
+
+We noticed that the default, page 1, does not contain the number of pages ```page=2&q=Computer+Science```. As a result, you will need to start on Page 2, copy the URL inside the `for loop`.
+
 ### Part2: Exploratory Data Analysis & Statistical Tests
 We can do simple EDA while the web scraping is still spinning and understand our dataset in advance. After all data (books) are being collected and stored in our MongoDB, then we can do statistical tests to answer our question. 
+
+Always remember to create a MongoDB first to store your data in Part 1.
+
+```client = MongoClient('localhost', 27017)
+db = client['book']
+book_info = db['book_info']
+```
 
 ### Findings
 * Average Rating (No signifcant difference between Books with longer number of pages of short number of number of pages)
@@ -51,7 +69,7 @@ We can do simple EDA while the web scraping is still spinning and understand our
 * Number of Book Editions (No significant difference)
 * **Rating Count** (sigificant difference acorrding to the test!)
 
-![Results](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/T-Test_Results.PNG?token=AMMQHZIWD3BWOB272VPTWBLAKMBOU)
+![Results](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/T-Test_Results.PNG?token=AMMQHZLD4TUP4O23FABR6ULAKMCRA)
 1. A book with more pages **DOES tend** to be rated more often according to the Statistical T-Tests.
 2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
