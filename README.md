@@ -58,7 +58,7 @@ We can do simple EDA while the web scraping is still spinning and understand our
 
 Always remember to create a MongoDB first to store your data in Part 1.
 
-```client = MongoClient('localhost', 27017)
+```
 db = client['book']
 book_info = db['book_info']
 ```
@@ -74,4 +74,4 @@ book_info = db['book_info']
 2. A Book has long number of pages **DOES NOT** lead to a higher Average Rating, Reviews Count, and Editions according to the Statistical T-Tests.
 
 ## Tableau (Data Visualization)
-![Dashboard](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Tableau_Dashboard.png?token=AMMQHZJJ3JSDADSA6NAHQWDAKMBRS)
+![Dashboard](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/Tableau_Dashboard.png?token=AMMQHZKNTMH5EN4FZN5VQA3AKMC6O)
