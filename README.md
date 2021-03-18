@@ -40,7 +40,7 @@ As a result, you will need to install [Docker](https://docs.docker.com/get-docke
 ![workflow](https://raw.githubusercontent.com/HailinDu/Goodreads-Web-Scraping/main/Images/WorkFlow.PNG)
 
 ### Part1: Web Scraping
-We will have two seperate juypter notebook, one for web scraping purpose call ```Goodreads Web Scraping Notebook.ipynb```, and another is for EDA purpose call```Goodreads  Exploratory Data Analysis & Statistical Tests.ipynb```.
+We will have two seperate juypter notebook, one for web scraping purpose call ```Goodreads Web Scraping Notebook.ipynb```, and another is for EDA & Statistical Tests purpose call```Goodreads  Exploratory Data Analysis & Statistical Tests.ipynb```.
 
 You will need to:
 * search a genre you interested in
